@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" manifest="manifest.appcache">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="icon" sizes="192x192" href="icon.png" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <link rel="shortcut icon" href="weeicon.png" type="image/x-icon" />
+
+    <link rel="icon" sizes="192x192" href="icon.png" />
+
+    <title>Currency Conversion</title>
+</head>
+<body>
+<header>Currency Conversion</header>
+
+
+<main>
+
+    <! closed hamburger icon when nav bar is hidden !>
+
+    <div id="closed_nav">
+
+        <span id="toggle">&#9776;</span>
+
+    </div>
+
+    <! nav bar when it has been toggled open !>
+
+    <div id="opened_nav">
+
+        <span id="closeToggle">&times</span>
+
+        <div id="nav-container">
+
+            Home <span id = "home-flag"></span><br>
+            <select id = "home-money">
+                <option>AUD</option><option>BGN</option><option>BRL</option><option>CAD</option>
+                <option>CHF</option><option>CNY</option><option>CZK</option><option>DKK</option>
+                <option>EUR</option><option>GBP</option><option>HRK</option><option>HUF</option>
+                <option>IDR</option><option>ILS</option><option>INR</option><option>ISK</option>
+                <option>JPY</option><option>KRW</option><option>MXN</option><option>MYR</option>
+                <option>NZD</option><option>PHP</option><option>PLN</option><option>RON</option>
+                <option>RUB</option><option>SEK</option><option>SGD</option><option>THB</option>
+                <option>TRY</option><option>USD</option><option>ZAR</option>
+
+            </select><br><br>
+
+            Abroad <span id = "abroad-flag"></span><br>
+            <select id = "abroad-money">
+                <option>AUD</option><option>BGN</option><option>BRL</option><option>CAD</option>
+                <option>CHF</option><option>CNY</option><option>CZK</option><option>DKK</option>
+                <option>EUR</option><option>GBP</option><option>HRK</option><option>HUF</option>
+                <option>IDR</option><option>ILS</option><option>INR</option><option>ISK</option>
+                <option>JPY</option><option>KRW</option><option>MXN</option><option>MYR</option>
+                <option>NZD</option><option>PHP</option><option>PLN</option><option>RON</option>
+                <option>RUB</option><option>SEK</option><option>SGD</option><option>THB</option>
+                <option>TRY</option><option>USD</option><option>ZAR</option>
+            </select><br><br>
+
+
+            Bank Fees: <br>
+            <select id = "bank-fees">
+                <option value="1">0%</option>
+                <option value="1.02">2%</option>
+                <option value="1.04">4%</option>
+                <option value="1.06">6%</option>
+            </select><br><br>
+
+            <div id = "submit_vals">OK</div>
+
+
+        </div>
+    </div>
+
+    <! End of nav bar !>
+
+    <div id="calc_container">
+        <div id="calculator">
+
+
+            <div id="main_display">
+                <span id="dest_info"></span>
+                <div id ="number_wrapper"><p><span id="home_amount"></span><span id="home_curr"></span></p></div>
+            </div>
+
+
+            <! buttons on calculator pad !>
+
+            <div id="operators">
+                <div class="keys" id="button7">7</div>
+                <div class="keys" id="button8">8</div>
+                <div class="keys" id="button9">9</div>
+                <div class="keys" id="button4">4</div>
+                <div class="keys" id="button5">5</div>
+                <div class="keys" id="button6">6</div>
+                <div class="keys" id="button1">1</div>
+                <div class="keys" id="button2">2</div>
+                <div class="keys" id="button3">3</div>
+                <div class="keys" id="buttonC">c</div>
+                <div class="keys" id="button0">0</div>
+                <div class="keys" id="buttonEq">=</div>
+            </div>
+
+            <! end of buttons on calculator pad !>
+
+        </div>
+    </div>
+</main>
+<footer id = "footer">Heather Thorburn 2020</footer>
+<script src="Model.js"></script>
+<script src="View.js"></script>
+<script src="Controller.js"></script>
+</body>
+</html>
